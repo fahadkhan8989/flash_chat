@@ -33,12 +33,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Hero(
-                    tag: 'logo',
-                    child: Container(
-                      child: Image.asset('images/logo.png'),
-                      height: 200,
-                      margin: EdgeInsets.only(bottom: 20),
+                  Flexible(
+                    child: Hero(
+                      tag: 'logo',
+                      child: Container(
+                        child: Image.asset('images/logo.png'),
+                        height: 200,
+                        margin: EdgeInsets.only(bottom: 20),
+                      ),
                     ),
                   ),
                   TextFormField(
